@@ -1,0 +1,27 @@
+.footer {
+    position: absolute;
+    bottom: 0   ;
+    width: 100%;
+    height: 105px;
+    background: linear-gradient(to right, #7e7eeb, #8eaade, #71bbe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+
+}
+
+.socialMedia svg {
+    color:rgb(31, 31, 92);
+    margin: 20px 20px 0px 20px;
+    font-size:55px;
+    cursor: pointer;
+}
+
+.footer p {
+    color:rgb(31, 31, 92);
+    font-size: 15px;
+}
+

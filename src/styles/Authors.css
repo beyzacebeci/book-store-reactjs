@@ -1,0 +1,22 @@
+.authors {
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.author-container {
+
+    border: solid green 1px;
+    border-radius: 30px;
+    padding: 4px;
+    width: 260px;
+    height: 150px;
+    margin: 8px;
+}
+
+.author-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
