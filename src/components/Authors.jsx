@@ -2,15 +2,14 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import "../styles/Authors.css";
+import { useContext } from "react";
+import BookStoreContext from "../context/storeContext";
 
 export const Authors = () => {
-  const [data, setData] = useState([]);
+  const { fetchAuthors, authors } = useContext(BookStoreContext);
 
   useEffect(() => {
-    axios
-      .get("https://localhost:7142/api/authors")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
+    fetchAuthors();
   }, []);
 
   return (
@@ -29,7 +28,7 @@ export const Authors = () => {
         </button>
       </div>
       <div className="author-list">
-        {data.map((author, index) => {
+        {authors.map((author, index) => {
           return (
             <div className="author-container">
               <h4 key={index}>{author.name}</h4>

@@ -9,6 +9,8 @@ import { Footer } from "./components/Footer";
 import { Login } from "./components/Login";
 import { Authors } from "./components/Authors";
 import { Books } from "./components/Books";
+import BookStoreContext from "./context/storeContext";
+import { useEffect } from "react";
 
 function App() {
   return (

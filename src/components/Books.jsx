@@ -2,15 +2,14 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import "../styles/Books.css";
+import { useContext } from "react";
+import BookStoreContext from "../context/storeContext";
 
 export const Books = () => {
-  const [data, setData] = useState([]);
+  const { fetchBooks, books } = useContext(BookStoreContext);
 
   useEffect(() => {
-    axios
-      .get("https://localhost:7142/api/books")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
+    fetchBooks();
   }, []);
 
   return (
@@ -40,7 +39,7 @@ export const Books = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((book, index) => {
+          {books.map((book, index) => {
             return (
               <tr key={index}>
                 <td>{book.id}</td>
