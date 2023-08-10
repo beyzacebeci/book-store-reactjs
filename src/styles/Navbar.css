@@ -48,6 +48,12 @@
     text-decoration: none;
     margin-right: 20px;
 }
+.navbar a.active {
+
+    font-weight: bold;
+    font-size: 19px;
+  
+}
 
 
 

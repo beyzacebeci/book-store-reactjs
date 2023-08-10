@@ -11,6 +11,7 @@
   }
 
 .author-container {
+  cursor: pointer;
   background-color: rgba(128, 128, 128, 0.24);
   border-radius: 30px;
   width: 300px;
@@ -40,3 +41,10 @@
 }
 
 
+/* ShowOneAuthor */
+
+.back-icon {
+  cursor: pointer;
+}
+
+/* OneAuthorInfo */

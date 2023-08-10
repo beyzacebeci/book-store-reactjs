@@ -1,6 +1,4 @@
 .footer {
-    position: absolute;
-    bottom: 0   ;
     width: 100%;
     height: 105px;
     background: linear-gradient(to right, #7e7eeb, #8eaade, #71bbe2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

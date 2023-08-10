@@ -1,7 +1,21 @@
-.all-categories {
-    width: 300px;
-    border: solid 1px green;
+
+.category-container {
+    margin: 30px;
+    display: flex;
+
 }
+/* ShowAllCategories */
+.all-categories {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+
+.category-list .category-name{
+    display: flex;
+}
+
 .form-control {
     width: 50px;
 }

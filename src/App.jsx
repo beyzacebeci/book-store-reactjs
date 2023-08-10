@@ -7,6 +7,8 @@ import { Home } from "./pages/Home";
 import { Authors } from "./pages/Authors";
 import { Books } from "./pages/Books";
 import { Contact } from "./pages/Contact";
+import ShowOneAuthorInfo from "./components/ShowOneAuthorInfo";
+import WrongPath from "./components/WrongPath";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/books" exact element={<Books />} />{" "}
         <Route path="/" exact element={<Home />} />
         <Route path="/contact" exact element={<Contact />} />
+        <Route path="/oneAuthorInfo" exact element={<ShowOneAuthorInfo />} />
+        <Route path="*" exact element={<WrongPath />} />
       </Routes>
       <Footer />
     </div>

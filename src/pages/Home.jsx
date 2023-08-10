@@ -4,7 +4,7 @@ import { ShowAllCategories } from "../components/ShowAllCategories";
 
 export const Home = () => {
   return (
-    <div className="home">
+    <div className="category-container">
       <ShowAllCategories />
     </div>
   );

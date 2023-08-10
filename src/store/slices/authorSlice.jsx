@@ -5,17 +5,27 @@ const initialState = {
   authorsData: [],
   loading: false,
   error: "",
+  searchTerm: "",
+  // authorSearched:[],
 };
 
 export const fetchAuthors = createAsyncThunk("fetchAuthor", async () => {
   const res = await axios.get("https://localhost:7142/api/authors");
   return res.data;
 });
+// export const fetchOneAuthor = createAsyncThunk("fetchAuthor", async () => {
+//   const res = await axios.get("https://localhost:7142/api/authors");
+//   return res.data;
+// });
 
 const authorSlice = createSlice({
   name: "author",
   initialState,
-  reducers: {},
+  reducers: {
+    changeSearchTerm(state, action) {
+      state.searchTerm = action.payload;
+    },
+  },
 
   extraReducers: (builder) => {
     builder.addCase(fetchAuthors.pending, (state) => {
@@ -33,4 +43,5 @@ const authorSlice = createSlice({
   },
 });
 
+export const { changeSearchTerm } = authorSlice.actions;
 export const authorReducer = authorSlice.reducer;
