@@ -1,23 +1,42 @@
 .authors {
-    padding:50px;
-    display: flex;
-    flex-direction: column;
-
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
-
-.author-container {
-
-    border: solid green 1px;
-    border-radius: 30px;
-    padding: 4px;
-    width: 260px;
-    height: 150px;
-    margin: 8px;
-}
-
 .author-list {
-    
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  
+  }
 
+.author-container {
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 30px;
+  width: 300px;
+  height: 110px;
+  margin: 8px;
+  display: flex;
 }
+.author-container .imgArea {
+  border: solid green 1px;
+
+  border-radius: 30px 0 0 30px;
+}
+
+.authorImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px ;
+  }
+
+.author-container .authorName {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   border-radius: 30px;
+}
+
+

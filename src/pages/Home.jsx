@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import { ShowAllCategories } from "./ShowAllCategories";
+import { ShowAllCategories } from "../components/ShowAllCategories";
 
 export const Home = () => {
   return (
