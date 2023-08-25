@@ -1,21 +1,20 @@
+.category-and-books {
+    display: flex;
 
+}
 .category-container {
     margin: 30px;
     display: flex;
-
-}
-/* ShowAllCategories */
-.all-categories {
-    display: flex;
     flex-direction: column;
-    width: 300px;
-    
+    margin-right: 100px;
 }
 
+/* ShowAllCategories */
 .category-list .category-name{
     display: flex;
 }
 
+/* CategorySearch */
 .form-control {
     width: 50px;
 }

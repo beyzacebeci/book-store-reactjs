@@ -20,7 +20,7 @@ function ShowAllAuthors() {
       categorySlice,
     }) => {
       const filteredAuthors = authorsData.filter((author) =>
-        author.name.toLowerCase().includes(searchTerm.toLowerCase())
+        author.authorName.toLowerCase().includes(searchTerm.toLowerCase())
       );
 
       return {
@@ -44,14 +44,14 @@ function ShowAllAuthors() {
                 onClick={() => navigate("/oneAuthorInfo")}
               >
                 <div className="img-area">
-                  <img
+                  {/* <img
                     className="authorImage"
                     src={`data:image/png;base64,${author.image}`}
-                  />
+                  /> */}{" "}
                 </div>
                 <div className="authorName">
                   {" "}
-                  <h6>{author.name}</h6>
+                  <h6>{author.authorName}</h6>
                 </div>
               </div>
             );

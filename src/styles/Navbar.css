@@ -21,6 +21,7 @@
 }
 
 .navbar .mainLink .cartDiv {
+    cursor: pointer;
     display: inline;
     position: relative;
     

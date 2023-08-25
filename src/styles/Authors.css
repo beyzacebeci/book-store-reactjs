@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
 }
+ /* ShowAllAuthors */
+ 
 .author-list {
     display: flex;
     flex-wrap: wrap;
@@ -41,10 +43,9 @@
 }
 
 
-/* ShowOneAuthor */
+/* ShowOneAuthorInfo */
 
 .back-icon {
   cursor: pointer;
 }
 
-/* OneAuthorInfo */

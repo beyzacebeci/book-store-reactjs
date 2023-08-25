@@ -10,7 +10,9 @@ export const Footer = () => {
         <InstagramIcon />
         <LinkedInIcon />
       </div>
-      <p>copyright 2024</p>
+      <div>
+        <span className="text-xs">© Copyright 2025 Beyza Cebeci</span>
+      </div>
     </div>
   );
 };

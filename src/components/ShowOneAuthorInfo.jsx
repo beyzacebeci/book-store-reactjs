@@ -24,7 +24,7 @@ function ShowOneAuthorInfo() {
         {authors.map((author, index) => {
           return (
             <div key={index}>
-              <h6>{author.bookNames}</h6>
+              <h6>{author.authorName}</h6>
             </div>
           );
         })}

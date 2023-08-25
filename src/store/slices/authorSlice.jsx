@@ -3,6 +3,7 @@ import axios from "axios";
 
 const initialState = {
   authorsData: [],
+  clickedAuthorData: [],
   loading: false,
   error: "",
   searchTerm: "",
@@ -11,12 +12,9 @@ const initialState = {
 
 export const fetchAuthors = createAsyncThunk("fetchAuthor", async () => {
   const res = await axios.get("https://localhost:7142/api/authors");
+  debugger;
   return res.data;
 });
-// export const fetchOneAuthor = createAsyncThunk("fetchAuthor", async () => {
-//   const res = await axios.get("https://localhost:7142/api/authors");
-//   return res.data;
-// });
 
 const authorSlice = createSlice({
   name: "author",
