@@ -1,13 +1,22 @@
-.all-books {
 
-    padding:50px;
+.search-sort-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 30px 0px 30px;
+    padding: 20px;
+    border: solid 1px rgba(133, 125, 125, 0.514);
+    border-radius: 30px;
 
-
+}
+.show-books-container {
+    padding: 30px;
 }
 
 .bookImage {
     width: 65px;
     height: 90px;
+}
+.all-books {
+    display: flex;
+    flex-direction: column;
 }

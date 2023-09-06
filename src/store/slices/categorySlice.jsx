@@ -4,14 +4,14 @@ import axios from "axios";
 const initialState = {
   categoriesData: [],
   // categoriesBookData: [],
-  loading: false,
-  error: "",
+  // loading: false,
+  // error: "",
 };
 
 export const fetchCategories = createAsyncThunk("fetchCategories", async () => {
-  const res = await axios.get("https://localhost:7142/api/categories/details");
-  debugger;
-  return res.data;
+  const res = await fetch("https://localhost:7142/api/categories");
+  const data = res.json();
+  return data;
 });
 
 const categorySlice = createSlice({
@@ -20,19 +20,18 @@ const categorySlice = createSlice({
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(fetchCategories.pending, (state) => {
-      state.loading = true;
-      state.error = "";
-    });
+    // builder.addCase(fetchCategories.pending, (state) => {
+    //   state.loading = true;
+    //   state.error = "";
+    // });
     builder.addCase(fetchCategories.fulfilled, (state, action) => {
       state.categoriesData = action.payload;
-      debugger;
       state.loading = false;
     });
-    builder.addCase(fetchCategories.rejected, (state, action) => {
-      state.error = action.error.message;
-      state.loading = false;
-    });
+    // builder.addCase(fetchCategories.rejected, (state, action) => {
+    //   state.error = action.error.message;
+    //   state.loading = false;
+    // });
   },
 });
 

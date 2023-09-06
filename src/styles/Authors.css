@@ -1,15 +1,22 @@
+
 .authors {
   padding: 50px;
   display: flex;
   flex-direction: column;
+
 }
  /* ShowAllAuthors */
- 
+
 .author-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+
+  }
+  .author-list a {
+    text-decoration: none;
+    color: black;
+
   }
 
 .author-container {
@@ -45,7 +52,23 @@
 
 /* ShowOneAuthorInfo */
 
+
+.author-books {
+ display: flex;
+}
+
+.author-allBooks{
+  display: flex;
+}
+/* .book-container {
+  border: solid green 3px;
+  width: 190px;
+  height: 250px;
+
+} */
+
 .back-icon {
   cursor: pointer;
 }
+
 

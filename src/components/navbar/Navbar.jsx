@@ -1,7 +1,7 @@
 import React from "react";
-import BookLogo from "../assets/book.png";
+import BookLogo from "./book.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import "../styles/Navbar.css";
+import "./Navbar.css";
 import { FaShoppingCart } from "react-icons/fa";
 
 export const Navbar = () => {
